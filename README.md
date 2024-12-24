@@ -14,7 +14,7 @@
  import createRouter from "uni-route-plugins";
 
 /** 
- *  notFoundPath 可填可不填 跳转到404页面使用
+ *  notFound 可填可不填 跳转到404页面使用
 */
 const routerMeta = {
     "/pages/index/index": { name: "index" },
@@ -58,5 +58,5 @@ export default router;
 - from：当前路由对象，包含当前路径、参数等信息。
 - next：控制是否放行。
 
-> 返回object类型或者boolean类型,返回boolean类型表示放行，返回false就等于不跳转，返回object类型表示拦截，object类型包含两个属性，router表示跳转方式，url表示跳转路径
+
 
