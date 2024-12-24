@@ -42,7 +42,6 @@ replaceRouters.forEach((item:NavigatType) => {
     let { next, isNext, navigat } = createNextControl()
     let to 
     let success = options.success || (() => { })
-    let fail = options.fail || (() => { })
     let oddCurrentRoute 
     if (item != "navigateTo") { 
       isUnload=true
@@ -86,7 +85,6 @@ replaceRouters.forEach((item:NavigatType) => {
           currentRouterInstance.afterEachFunc && currentRouterInstance.afterEachFunc({ to, from: parentRoute })
         },
         fail: () => {
-          fail()
           config.notFound && uni.navigateTo({ url: config.notFound })
         }
       })
