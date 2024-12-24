@@ -655,9 +655,7 @@ function handleUnload() {
                     _a.sent();
                     config.loading && uni.hideLoading();
                     if (!isNext) {
-                        uni[parentRoute.type](__assign(__assign({}, parentRoute), { fail: function () {
-                                uni.navigateTo({ url: config.notFound });
-                            } }));
+                        uni[parentRoute.type](__assign({}, parentRoute));
                         return [2 /*return*/];
                     }
                     if (navigat) {

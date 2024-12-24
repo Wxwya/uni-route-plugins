@@ -1,6 +1,6 @@
 {
   "name": "uni-route-plugins",
-  "version": "1.2.1",
+  "version": "1.2.3",
   "type": "module",
   "main": "dist/uni-route-plugins.cjs.js",
   "module": "dist/uni-route-plugins.esm.js",
@@ -18,7 +18,11 @@
   "files": [
     "dist/**/*"
   ],
-  "keywords": [],
+ "keywords": ["uni-app", "router", "plugin", "route-guard"],
+ "repository": {
+  "type": "git",
+  "url": "https://github.com/Wxwya/uni-route-plugins.git"
+},
   "author": "xwya",
   "license": "MIT",
   "devDependencies": {

@@ -108,9 +108,7 @@ async function handleUnload() {
   config.loading && uni.hideLoading()
   if (!isNext) {
     uni[parentRoute.type]({
-      ...parentRoute, fail: () => { 
-      uni.navigateTo({ url: config.notFound })
-      }
+      ...parentRoute,
     })
     return 
   }
