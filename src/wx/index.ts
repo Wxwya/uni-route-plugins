@@ -1,6 +1,7 @@
 
 // @ts-nocheck
-import { createNextControl, getMetaOption, showLoading,replaceRouters } from "../utils"
+import { createNextControl, getMetaOption, showLoading, replaceRouters } from "../utils"
+  // #ifdef MP-WEIXIN
 let currentRouterInstance:RouterWxMixin&RouterMixin
 let config:RouterConfig = {
   loading: true,
@@ -97,4 +98,5 @@ const createWxControl = (defaultConfig:RouterConfig, defaultHooks:RouterMixin):R
   return currentRouterInstance
 
 }
+// #endif
 export default createWxControl

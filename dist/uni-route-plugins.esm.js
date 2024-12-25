@@ -427,6 +427,7 @@ function showLoading(title) {
 }
 var replaceRouters = ['navigateTo', 'redirectTo', 'switchTab', 'reLaunch', 'navigateBack'];
 
+// #ifdef MP-WEIXIN
 var currentRouterInstance$1;
 var config$1 = {
     loading: true,
@@ -541,6 +542,7 @@ var createWxControl = function (defaultConfig, defaultHooks) {
     return currentRouterInstance$1;
 };
 
+// #ifdef H5 || APP-PLUS
 var firstPage = true;
 var isUnload = false;
 var currentRouterInstance;

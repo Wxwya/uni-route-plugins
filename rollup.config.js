@@ -34,7 +34,7 @@ export default {
         }
       }
     }), 
-
+   
   ],
   external: ['uni'], // 将 uni 和 vue 作为外部依赖
 };

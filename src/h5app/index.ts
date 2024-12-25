@@ -1,5 +1,7 @@
 // @ts-nocheck
-import { getMetaOption, createNextControl, showLoading, getCurrentPage,replaceRouters } from "../utils";
+import { getMetaOption, createNextControl, showLoading, getCurrentPage, replaceRouters } from "../utils";
+
+// #ifdef H5 || APP-PLUS
 let firstPage = true
 let isUnload =  false
 let currentRouterInstance:RouterPublicMixin&RouterMixin
@@ -162,4 +164,5 @@ let publicHooks:RouterPublicMixin ={
    }
   return currentRouterInstance
 }
+// #endif
 export default createPublicControl

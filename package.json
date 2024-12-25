@@ -1,6 +1,6 @@
 {
   "name": "uni-route-plugins",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "type": "module",
   "main": "dist/uni-route-plugins.cjs.js",
   "module": "dist/uni-route-plugins.esm.js",
