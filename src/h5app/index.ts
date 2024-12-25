@@ -28,9 +28,14 @@ let parentRoute: RouterPage = {
 }
 
 // 重写路由方法
-const nativeRoutersFunc =Object.fromEntries(
-  replaceRouters.map((item) => [item, uni[item]])
-);
+const nativeRoutersFunc ={
+  navigateTo: uni.navigateTo,
+  redirectTo: uni.redirectTo,
+  switchTab: uni.switchTab,
+  reLaunch: uni.reLaunch,
+  navigateBack: uni.navigateBack,
+}
+
 
 function getQueryParams(url:string): { path: string; query: Record<string, string> } {
   const [path, queryString=""] = url.split("?") || [url, ""];

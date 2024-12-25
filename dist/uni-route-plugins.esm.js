@@ -570,6 +570,7 @@ var parentRoute = {
 };
 // 重写路由方法
 var nativeRoutersFunc = Object.fromEntries(replaceRouters.map(function (item) { return [item, uni[item]]; }));
+console.log("66666");
 function getQueryParams(url) {
     var _a = url.split("?") || [url, ""], path = _a[0], _b = _a[1], queryString = _b === void 0 ? "" : _b;
     var query = Object.fromEntries(queryString.split("&").map(function (pair) { return pair.split("=").map(decodeURIComponent); }));

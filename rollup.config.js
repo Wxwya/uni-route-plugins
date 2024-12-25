@@ -1,6 +1,5 @@
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import typescript from 'rollup-plugin-typescript2';
-import { terser } from 'rollup-plugin-terser';
 
 export default {
   input: 'src/index.ts', // 入口文件为 TypeScript 文件
@@ -36,5 +35,5 @@ export default {
     }), 
    
   ],
-  external: ['uni'], // 将 uni 和 vue 作为外部依赖
+  external: ['uni',"vue"], 
 };
