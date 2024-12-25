@@ -98,5 +98,5 @@ const createWxControl = (defaultConfig:RouterConfig, defaultHooks:RouterMixin):R
   return currentRouterInstance
 
 }
-// #endif
 export default createWxControl
+// #endif

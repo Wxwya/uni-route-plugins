@@ -543,6 +543,7 @@ var createWxControl = function (defaultConfig, defaultHooks) {
     currentRouterInstance$1 = __assign(__assign({}, wxHooks), defaultHooks);
     return currentRouterInstance$1;
 };
+// #endif
 
 // #ifdef H5 || APP-PLUS
 var firstPage = true;
@@ -724,9 +725,8 @@ var createPublicControl = function (defaultConfig, defaultHooks) {
     currentRouterInstance = __assign(__assign({}, defaultHooks), publicHooks);
     return currentRouterInstance;
 };
-
-// #ifdef MP-WEIXIN
 // #endif
+
 var defaultHooks = {
     beforeEachFunc: function () { },
     afterEachFunc: function () { },

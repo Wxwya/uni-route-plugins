@@ -164,5 +164,5 @@ let publicHooks:RouterPublicMixin ={
    }
   return currentRouterInstance
 }
-// #endif
 export default createPublicControl
+// #endif

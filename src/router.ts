@@ -1,9 +1,5 @@
-// #ifdef MP-WEIXIN
 import createWxControl from "./wx";
-// #endif
-// #ifdef H5 || APP-PLUS
 import createPublicControl from "./h5app";
-// #endif
 
 
 const defaultHooks:RouterMixin = {
